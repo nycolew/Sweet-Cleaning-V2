@@ -533,6 +533,16 @@ footer ul {
   list-style-type: none;
   margin-bottom: 0;
 }
+@media (min-width: 1070px) {
+  footer {
+    position: inherit;
+    background: linear-gradient(to top, #FFF0F2, #FFF0F2 35%, #FFFFFF 75%);
+    opacity: 1;
+    z-index: inherit;
+    margin-top: 0;
+    height: 11.1111111111em;
+  }
+}
 
 #desktop-nav-list {
   padding-left: none;
@@ -606,7 +616,7 @@ footer ul {
 
 h1 {
   font-family: "Clicker Script", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 4em;
+  font-size: 3.6666666667em;
   text-align: center;
   padding-top: 0.8333333333em;
   display: inline-block;
@@ -614,6 +624,7 @@ h1 {
 @media (min-width: 1070px) {
   h1 {
     padding: 0;
+    font-size: 4em;
   }
 }
 

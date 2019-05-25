@@ -4,13 +4,14 @@
 
 h1 {
   font-family: $font-family--secondary;
-  font-size: em(72px);
+  font-size: em(66px);
   text-align: center;
   padding-top: em(15px);
   display: inline-block;
 
   @include mq(large) {
     padding: 0;
+    font-size: em(72px);
   }
 }
 
