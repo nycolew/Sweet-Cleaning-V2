@@ -1,0 +1,190 @@
+// =========================
+//        LAYOUT
+// =========================
+
+.main-headline {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  text-align: center;
+  max-width: 95%;
+
+  @include mq(large) {
+    text-align: left;
+    max-width: inherit;
+  }
+}
+
+h2 {
+  margin-top: em(-10px);
+  padding-top: 0;
+}
+
+header {
+  padding-bottom: em(150px);
+
+  @include mq(large) {
+    position: fixed;
+    width: 100%;
+    height: 30%;
+    z-index: 500;
+  }
+}
+
+#about {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: lighten($chestnut-rose, 39%);
+  width: 88%;
+  border-radius: $border-radius;
+  color: darken($color-text, 10%);
+  padding: em(10px);
+  text-align: center;
+  border: 3px solid $chestnut-rose;
+
+  @include mq(large) {
+    margin-top: em(100px);
+  }
+}
+
+.bio {
+  padding-top: 0;
+}
+
+#services {
+  @include mq(large) {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+#services-content {
+  border-top: 5px solid lighten($color-primary, 20%);
+  margin-top: em(5px);
+  padding-top: em(20px);
+
+  @include mq(large) {
+    border-top: none;
+  }
+}
+
+#testimonials {
+  border-bottom: 5px solid lighten($color-primary, 20%);
+  margin-bottom: 0;
+  padding-bottom: em(20px);
+
+  @include mq(large) {
+    @include flexify($dir: row, $just: flex-start);
+    margin-top: 5%;
+  }
+}
+
+.services-list {
+  padding-left: em(80px);
+
+  @include mq(large) {
+    padding-left: em(200px);
+  }
+}
+
+#contact-choice-box {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#contact {
+  padding-bottom: em(200px);
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: darken($chablis, 5%);
+  opacity: 0.8;
+  z-index: 1500;
+  margin-top: em(100px);
+
+  ul {
+    list-style-type: none;
+    margin-bottom: 0;
+  }
+
+}
+
+#desktop-nav-list {
+  padding-left: none;
+
+  @include mq(large) {
+    padding-right: em(20px);
+  }
+}
+
+#hero {
+  display: none;
+
+  @include mq(large) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: em(200px);
+  }
+}
+
+#hero-call {
+  max-width: 350%;
+}
+
+#social-desktop {
+  @include mq(large) {
+    width: 100%;
+    background: rgba(255, 240, 242, 0.4);
+    border-radius: $border-radius;
+    text-align: center;
+    color: $color-primary;
+    margin-right: em(40px);
+    border: 2px solid darken($chablis, 5%);
+  }
+}
+
+#scroll-anchor {
+  &-about {
+    height: 1px;
+    @include mq(large) {
+        height: em(190px);
+    }
+  }
+
+  &-testimonials {
+    height: 1px;
+    @include mq(large) {
+      height: em(190px);
+    }
+  }
+
+  &-services {
+    height: 1px;
+    @include mq(large) {
+      height: em(190px);
+    }
+  }
+
+  &-contact {
+    height: 1px;
+    @include mq(large) {
+      height: em(190px);
+    }
+  }
+}

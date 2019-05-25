@@ -1,0 +1,90 @@
+// ========================
+//        FORMS
+// ========================
+
+form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq(large) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+}
+
+input,
+textarea {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: em(10px);
+  margin-bottom: em(10px);
+  border: 3px solid $color-primary;
+  width: 85%;
+  border-radius: 0.3em;
+  padding: em(8px);
+  background: lighten($color-primary, 35%);
+
+  &::placeholder {
+    font-family: $font-family--tertiary;
+    font-size: em(24px);
+  }
+
+  @include mq(large) {
+    width: 45%;
+  }
+}
+
+textarea {
+  height: em(200px);
+
+  @include mq(large) {
+    width: 95%;
+  }
+}
+
+#contact-choice--text,
+#contact-choice--email,
+#contact-choice--phone {
+  display: inline;
+  width: 8%;
+  margin-left: em(5px);
+  margin-right: em(5px);
+  margin-top: 0;
+}
+
+#contact-choice-box {
+
+  label {
+    margin-left: 0;
+    margin-right: em(10px);
+  }
+
+  input {
+    margin-right: 0;
+
+    @include mq(large) {
+      margin-left: 0;
+    }
+  }
+
+  @include mq(large) {
+    width: 100%;
+  }
+}
+
+#radio-box-container {
+  @include mq(large) {
+    @include flexify($dir: row, $just: space-between);
+  }
+
+  input {
+    @include mq(large) {
+      margin-top: em(50px);
+    }
+  }
+}

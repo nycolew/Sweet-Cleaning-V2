@@ -1,0 +1,60 @@
+// ===================================
+//        PLACEHOLDERS
+// ===================================
+
+
+
+Centering Helpers
+
+%centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Text Shadow
+
+%shadowed {
+  text-shadow: 1px 2px 1px lighten($pale-oyster, 10%);
+}
+
+
+// Screen Reader Text
+
+.srt {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+// Element Styling
+// ===================================
+
+
+// Buttons
+
+%btn {
+  color: $white;
+  text-transform: uppercase;
+  font-family: $font-family--primary;
+  font-size: em(22px);
+  font-weight: bold;
+  border-radius: 0.5em; 
+  padding: em(15px);
+  cursor: pointer;
+  margin-top: em(22px);
+  transition: opacity .2s;
+
+  &:hover {
+    opacity: .75;
+    }
+
+  &:active {
+    opacity: initial;
+  }
+}

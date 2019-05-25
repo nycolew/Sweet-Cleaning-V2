@@ -1,0 +1,220 @@
+// ====================
+//      TYPOGRAPHY
+// ====================
+
+h1 {
+  font-family: $font-family--secondary;
+  font-size: em(72px);
+  text-align: center;
+  padding-top: em(15px);
+  display: inline-block;
+
+  @include mq(large) {
+    padding: 0;
+  }
+}
+
+h2 {
+  font-family: $font-family--tertiary;
+  color: lighten($chestnut-rose, 20%);
+  font-size: em(22px);
+  text-align: center;
+  padding-left: em(20px);
+  padding-right: em(20px);
+
+  @include mq(medium) {
+    width: 100%;
+    margin-top: em(-45px);
+    margin-left: em(15px);
+  }
+
+  @include mq(large) {
+    text-align: left;
+  }
+
+  @include mq(extra) {
+    width: 50%;
+  }
+}
+
+h3 {
+  @extend %shadowed;
+  font-family: $font-family--secondary;
+  font-size: em(64px);
+  text-align: center;
+  color: lighten($color-primary, 10%);
+}
+
+#about-section-header {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: em(10px);
+}
+
+.phone-number {
+  font-family: $font-family--primary;
+  color: lighten($color-primary, 8%);
+  font-size: em(30px);
+  text-align: center;
+  display: block;
+  padding-top: em(6px);
+
+  @include mq(large) {
+    display: none;
+  }
+}
+
+.gold-text {
+    color:#c3a343;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent),
+    url('../img/gold-text.jpg') repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+}
+
+.sparkle {
+  font-family: 'Times New Roman';
+  color: lighten($chestnut-rose, 30%);
+  z-index: -10;
+
+  &-left {
+    font-size: em(100px);
+    margin-right: em(-4px);
+  }
+
+  &-right {
+    vertical-align: bottom;
+    margin-left: -10px;
+    font-size: em(72px);
+  }
+}
+
+.owner-signature {
+  @extend %shadowed;
+  font-size: em(33px);
+  color: lighten($chestnut-rose, 8%);
+  font-family: $font-family--secondary;
+}
+
+blockquote {
+  font-size: em(40px);
+  font-family: $font-family--tertiary;
+  font-style: italic;
+  max-width: 80%;
+  margin-top: 20%;
+  text-align: center;
+
+  @include mq(large) {
+    margin-top: 0;
+    margin-right: 0;
+  }
+}
+
+#quoted {
+  text-align: center;
+  padding-right: 15%;
+  font-family: $font-family--secondary;
+  font-size: em(78px);
+  font-weight: bold;
+  padding-top: 0;
+  margin-top: 0;
+
+  @include mq(large) {
+    text-align: center;
+  }
+}
+
+.pink-text {
+  font-family: $font-family--primary;
+  font-size: em(30px);
+  text-align: center;
+  opacity: 0.6;
+  color: $color-primary;
+}
+
+.headline-border {
+  width: 100%;
+  border-bottom: 2px solid lighten($color-primary, 20%);
+  border-top: 2px solid lighten($color-primary, 20%);
+  padding-bottom: em(10px);
+  padding-top: em(10px);
+  margin-bottom: 0;
+  margin-top: em(2px);
+
+  @include mq(large) {
+    border: none;
+    color: lighten($color-primary, 15%);
+  }
+}
+
+.text-content {
+  padding-left: em(20px);
+  padding-right: em(20px);
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+  color: lighten($color-primary, 20%);
+  font-family: $font-family--tertiary;
+  font-size: em(28px);
+}
+
+#services-content {
+  a {
+    color: $color-primary;
+    font-family: $font-family--tertiary;
+  }
+}
+
+#desktop-nav-list {
+  text-transform: uppercase;
+  font-family: $font-family--primary;
+  font-size: em(26px);
+
+  li {
+    margin-left: em(5px);
+    margin-right: em(5px);
+    padding-top: em(20px);
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+      transition: all 150ms ease-in-out;
+      opacity: 0.5;
+    }
+  }
+
+  @include mq(extra) {
+    font-size: em(30px);
+
+    li {
+      margin-left: em(10px);
+      margin-right: em(10px);
+    }
+  }
+
+}
+
+#phone-number-desktop {
+  color: lighten($color-primary, 8%);
+  font-size: em(30px);
+  font-family: $font-family--primary;
+  text-align: center;
+  background: transparent;
+}
+
+#hero-call p {
+  font-size: em(50px);
+  font-family: $font-family--tertiary;
+  padding-left: em(30px);
+  padding-right: em(30px);
+}
+
+#testimonials {
+  @include mq(large) {
+    margin-bottom: em(150px);
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,43 @@
+// ==============================
+//        BASE STYLES
+// ==============================
+
+* {
+  box-sizing: border-box;
+  background: transparent;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $color-background;
+  font-family: $font-family--primary;
+  color: $color-text;
+}
+
+header {
+  background: linear-gradient(to bottom, $chablis, $white 10%);
+  padding-bottom: 0;
+  margin-bottom: 0;
+
+  @include mq(large) {
+    background: linear-gradient(to bottom, $chablis, $white 25%);
+  }
+}
+
+main {
+  background: $white;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  background: $chablis;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}

@@ -1,0 +1,48 @@
+//===============================
+// GLOBAL CONFIG
+//===============================
+
+// Colors
+
+$chablis            : #FFF0F2;
+$cranberry          : #D2527F;
+$chestnut-rose      : #D25852;
+$mandalay           : #AF851A;
+$canary             : #FCF866;
+$lightning-yellow   : #FBC71C;
+$pale-oyster        : #968A79;
+$white              : #FFFFFF;
+$black              : #00001E;
+
+
+// Color Usage
+
+$color-primary      : $chestnut-rose;
+$color-background   : $chablis;
+$color-text         : $pale-oyster;
+
+
+// Font Stacks
+
+$font-url--google           : 'https://fonts.googleapis.com/css?family=Clicker+Script|Raleway|El+Messiri';
+
+$font-family--primary       : 'Raleway', 'El Messiri', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary     : 'Clicker Script', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--tertiary      : 'El Messiri', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Text
+
+$base__font-size : 18px;
+$base__line-height: 26px;
+$letter-space: 1px;
+
+// Breakpoints
+
+$brkpoint-sm: 1px;
+$brkpoint-md: 768px;
+$brkpoint-lg: 1070px;
+$brkpoint-extra: 1090px; 
+
+// Borders
+
+$border-radius: 20px;

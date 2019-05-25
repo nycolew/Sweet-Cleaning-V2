@@ -1,0 +1,51 @@
+// =========================
+//          MIXINS
+// ========================
+
+
+// Flexbox
+
+
+@mixin flexify(
+  $disp : flex,
+  $dir  : null,
+  $just : null,
+  $wrap : null) {
+    display: $disp;
+    flex-direction: $dir;
+    justify-content: $just;
+    flex-wrap: $wrap;
+  };
+
+
+  // Media Queries
+
+@mixin mq($break) {
+  @if $break == "small" {
+    @media(min-width: $brkpoint-sm) {
+      @content;
+    }
+  }
+
+  @else if $break == "medium" {
+    @media(min-width: $brkpoint-md + 1) {
+      @content;
+    }
+  }
+
+  @else if $break == "large" {
+    @media(min-width: $brkpoint-lg) {
+      @content;
+    }
+  }
+
+  @else if $break == "extra" {
+    @media(min-width: $brkpoint-extra) {
+      @content;
+    }
+  }
+
+  @else {
+    @error "'#{$break}' is not a valid entry."
+  }
+};

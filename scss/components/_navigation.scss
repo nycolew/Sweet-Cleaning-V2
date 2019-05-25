@@ -1,0 +1,39 @@
+// ================
+//    NAVIGATION
+// ================
+
+
+#mobile-nav-ul {
+  @include flexify($dir: row, $just: space-around);
+
+  li {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+#mobile-nav {
+  @include mq(large) {
+    display: none;
+  }
+}
+
+#desktop-nav {
+  display: none;
+  background: transparent;
+
+  @include mq(large) {
+    display: block;
+  }
+
+  &-list {
+    @include flexify($dir: row, $just: space-around);
+    list-style-type: none;
+  }
+}
+
+header {
+  @include mq(large) {
+    @include flexify($dir: row, $just: space-between);
+  }
+}

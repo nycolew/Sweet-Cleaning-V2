@@ -1,0 +1,50 @@
+// ==================
+//      IMAGES
+// ==================
+
+#logo-mobile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 72%;
+  height: auto;
+
+  @include mq(large) {
+    display: none;
+  }
+}
+
+#logo-desktop {
+  display: none;
+
+  @include mq(large) {
+    display: block;
+    height: 65vh;
+    width: auto;
+    padding-top: em(15px);
+    padding-left: em(100px);
+  }
+}
+
+#fb {
+  width: em(150px);
+  height: em(150px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: em(70px);
+  fill: lighten($color-primary, 15%);
+
+  @include mq(large) {
+    fill: darken($chablis, 15%);
+  }
+}
+
+.nav-svg {
+  fill: $color-primary;
+  stroke: $color-primary;
+  max-width: em(50px);
+  max-height: em(50px);
+  margin: 0;
+  padding-bottom: 0;
+}

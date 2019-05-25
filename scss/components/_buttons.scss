@@ -1,0 +1,29 @@
+// ============================
+//        BUTTONS
+// ============================
+
+.pink-button {
+  @extend %btn;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center; 
+  background: linear-gradient($chestnut-rose, lighten($chestnut-rose, 20%));
+  border: 2px solid darken($color-primary, 2%);
+
+  @include mq(large) {
+    width: 25%;
+  }
+}
+
+#button-link {
+  width: 25%;
+  text-align: center;
+}
+
+#contact-form-submit {
+  @include mq(large) {
+     margin-right: em(30px);
+  }
+}
